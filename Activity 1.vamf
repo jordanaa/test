@@ -1,0 +1,41 @@
+{
+	"name": "Activity 1",
+	"shortDescription": "Activity 1",
+	"descriptionMarkdown": "activity.md",
+	"priority":10,
+	"topology": [
+	
+		{
+			"name": "Abs Topo",
+			"addRepositoryNamePrefix": "false",
+			"actionTitle": "Reserve",
+			"description": "Topology reservation",
+			"reservationDuration": "60",
+			"automation": [
+				
+				
+				{
+					"allowToRunWithOptions":true,
+					"testPath": "geo-repo/sleep_1m.fftc"
+				}
+				
+				
+				
+				
+				
+				      ]
+		
+		},
+		
+		
+		{
+			"name": "Topo1",
+			"addRepositoryNamePrefix": "false",
+			"actionTitle": "Reserve",
+			"description": "Topology reservation",
+			"reservationDuration": "60",
+			"automation": []
+		
+		}
+		   ]
+}
