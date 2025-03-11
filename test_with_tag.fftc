@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<testCase version="24.4.0.202412090651">
+    <general>
+        <documentation>test for vBots</documentation>
+        <tags>tag1,tag2,tag3</tags>
+        <language>Python</language>
+    </general>
+    <execution>
+        <parameters version="24.4.0.202412090651">
+            <parameters escape="true">
+                <parameters xmlns:pt="http://www.fnfr.com/schemas/parameterTree">
+                    <param1>value1</param1>
+                    <property_ipAddress>autoTest</property_ipAddress>
+                    <param2>
+                        <param1>test1</param1>
+                        <param2>test2</param2>
+                    </param2>
+                    <property_hostname>autoTest</property_hostname>
+                    <property_username>autoTest</property_username>
+                    <property_password>autoTest</property_password>
+                </parameters>
+            </parameters>
+        </parameters>
+    </execution>
+    <requirements>
+        <requirement key="pool">driver</requirement>
+    </requirements>
+    <procedures>
+        <item name="main">
+            <steps>
+                <item guid="bab9852e-f9d6-42df-807a-3515414f9798" action="eval" useFieldsInCommand="false">
+                    <command>
+                        <body>print(&quot;Test with tag1&quot;)</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
+                <item guid="a967ec2e-2a48-4776-be6e-8f76ad5a7ef9" action="eval" useFieldsInCommand="false">
+                    <command>
+                        <body>print(param (&apos;param1&apos;))</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
+                <item guid="8e9d7693-98d9-4100-b739-9828c67fda1c" action="eval" useFieldsInCommand="false">
+                    <command>
+                        <body>print(param (&apos;property_ipAddress&apos;))</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
+                <item guid="e3b0113c-4a91-4da2-8baf-62ddc28ef722" action="eval" useFieldsInCommand="false">
+                    <command>
+                        <body>print(param (&apos;property_hostname&apos;))</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
+                <item guid="9bec70e0-cf39-4b5b-8f89-6c302f0930fd" action="eval" useFieldsInCommand="false">
+                    <command>
+                        <body>print(param (&apos;property_username&apos;))</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
+                <item guid="9e80c2d0-6a13-4e1d-9d62-530c6fa48b98" action="eval" skip="true" useFieldsInCommand="false">
+                    <command>
+                        <body>print(param (&apos;property_password&apos;))</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
+                <item guid="9b5ee8a1-1df0-4d04-89de-cedf3cd3d7ef" action="eval" useFieldsInCommand="false">
+                    <command>
+                        <body>print(velocity(&apos;reservationId&apos;))</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
+                <item guid="6b7272b3-9a77-4c00-bbd4-bc9904f483d6" action="eval" useFieldsInCommand="false">
+                    <command>
+                        <body>print(param (&apos;resourceId&apos;))</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
+                <item guid="051d9dae-74e2-45a4-a75a-74653b6d255e" action="eval" useFieldsInCommand="false">
+                    <command>
+                        <body>print(param (&apos;topologyResourceId&apos;))</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
+            </steps>
+        </item>
+    </procedures>
+</testCase>
