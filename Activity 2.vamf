@@ -1,6 +1,6 @@
 {
 	"name": "Activity 2",
-	"shortDescription": "Activity 2",
+	"shortDescription": "Activity 2- priority 60",
 	"descriptionMarkdown": "activity.md",
 	"priority":60,
 	"topology": [
